@@ -1,0 +1,46 @@
+.hero {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.hero__title {
+  padding-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  color: rgba(44, 44, 44, 1);
+}
+.hero__text {
+  padding-bottom: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(44, 44, 44, 1);
+}
+
+.hero__button {
+  padding: 6px 18px;
+
+  cursor: pointer;
+  width: 98px;
+  height: 32px;
+  background: rgba(187, 243, 48, 1);
+  border-radius: 30px;
+  border: none;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  color: #2c2c2c;
+}
+.hero__button:hover,
+.hero__button:focus {
+  background: rgba(181, 255, 0, 1);
+}
