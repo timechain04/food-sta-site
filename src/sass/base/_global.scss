@@ -11,11 +11,6 @@ body {
 }
 
 .section {
-  padding: 60px 0;
-
-  @include media-min($desktop) {
-    padding: 94px 0;
-  }
 }
 
 .list {
