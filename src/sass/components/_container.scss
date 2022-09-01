@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  // max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media-min($mobile) {
+    width: $mobile;
+  }
+  @include media-min($tablet) {
+    width: $tablet;
+  }
+  @include media-min($desktop) {
+    width: $desktop;
+  }
+}
