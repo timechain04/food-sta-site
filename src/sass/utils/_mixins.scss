@@ -16,6 +16,12 @@
   }
 }
 
+@mixin media-min($query) {
+  @media screen  and (min-width: #{$query}) {
+    @content;
+  }
+}
+
 @mixin media-max($query) {
   @media screen  and (max-width: #{$query}) {
     @content;
