@@ -3,16 +3,20 @@
   // max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @include media-min($mobile) {
     width: $mobile;
   }
   @include media-min($tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
     width: $tablet;
   }
   @include media-min($desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
     width: $desktop;
   }
 }
