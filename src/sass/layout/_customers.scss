@@ -12,6 +12,10 @@
     background-image: url('../images/customers/customer-bg-mob-2x.png');
   }
 
+  @include media-min($mobile) {
+    height: 700px;
+  }
+
   @include media-min($tablet) {
     height: 544px;
     background-image: url('../images/customers/customers-bg-tab.png');
@@ -50,14 +54,48 @@
 
     background-color: #ffffff;
     padding: 8px;
-    height: 200px;
     border-radius: 0 30px 30px 30px;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-bottom: 40px;
+  }
+
+  &__person-box {
+    display: flex;
+  }
+
+  &__cover {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    margin-right: 3px;
+  }
+
+  &__person-info {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 13px;
+    gap: 2px;
+
+    border-right: 0.854167px solid #7eb101;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  &__name {
+    font-weight: 700;
   }
 }
 
 .stars {
   display: flex;
   gap: 4px;
+  margin-bottom: 28px;
 
   &__icon {
     width: 17px;
