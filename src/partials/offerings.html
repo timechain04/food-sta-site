@@ -15,7 +15,7 @@
     </p>
     <ul class="offerings__list list">
       <li class="offerings__item">
-        <svg>
+        <svg class="offerings__icon">
           <use href="../src/images/sprite.svg#icon-rocket"></use>
         </svg>
         <h3 class="offerings__title--small">Fasest Delivery</h3>
@@ -25,7 +25,7 @@
         </p>
       </li>
       <li class="offerings__item">
-        <svg>
+        <svg offerings__icon>
           <use href="../src/images/sprite.svg#icon-touch"></use>
         </svg>
         <h3 class="offerings__title--small">Easy to order</h3>
@@ -35,7 +35,13 @@
         </p>
       </li>
     </ul>
-    <button type="button" class="btn">Order Now</button>
-    <a href="#">Read More</a>
+    <div>
+      <button class="offerings__button button" type="button">Order Now</button>
+      <a class="offerings__link" href="#">Read More
+        <svg offerings__icon>
+          <use href="../src/images/sprite.svg#icon-reed-more-arrow"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </section>
