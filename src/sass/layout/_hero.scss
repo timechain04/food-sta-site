@@ -57,6 +57,10 @@
     border: 14px solid var(--yellow);
     border-radius: 50%;
   }
+
+  @include desktop {
+    max-width: none;
+  }
 }
 
 .hero__button {
@@ -65,7 +69,7 @@
   cursor: pointer;
   width: 98px;
   height: 32px;
-  background: rgba(187, 243, 48, 1);
+  background: --green;
   border-radius: 30px;
   border: none;
 
@@ -75,9 +79,10 @@
   font-size: 13px;
   line-height: 150%;
 
-  color: #2c2c2c;
-}
-.hero__button:hover,
-.hero__button:focus {
-  background: rgba(181, 255, 0, 1);
+  color: --praimery-text-color;
+
+  &__button:hover,
+  &__button:focus {
+    background: --accent-green;
+  }
 }
