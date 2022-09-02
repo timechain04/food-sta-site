@@ -1,18 +1,22 @@
 .container {
-  width: 100%;
-  // max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  min-width: 320px;
 
-  @include media-min($mobile) {
-    width: $mobile;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-  @include media-min($tablet) {
-    width: $tablet;
+
+  @media screen and(min-width: 768px) {
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
-  @include media-min($desktop) {
-    width: $desktop;
+
+  @media screen and(min-width: 1280px) {
+    width: 1280px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }
