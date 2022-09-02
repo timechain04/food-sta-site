@@ -13,10 +13,12 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
-
   color: --praimery-text-color;
-}
-.hero__button:hover,
-.hero__button:focus {
-  background: --accent-green;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background: --accent-green;
+  }
 }
