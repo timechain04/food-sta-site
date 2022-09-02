@@ -13,4 +13,6 @@
     rgba(105, 105, 105, 0) 100%
   );
   --backdrop-color: rgba(94, 99, 99, 0.7);
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
