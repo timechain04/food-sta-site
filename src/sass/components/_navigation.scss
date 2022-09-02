@@ -9,9 +9,7 @@
     height: 51px;
     width: 100%;
     padding: 16px 0 16px 16px;
-
-    &:hover,
-    &:focus {
+    &--accent {
       background-color: var(--green);
     }
   }
