@@ -28,6 +28,8 @@
   }
 }
 .hero__text {
+  max-width: 336px;
+
   padding-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
@@ -39,7 +41,6 @@
   @include tablet {
     padding-bottom: 40px;
     font-size: 16px;
-    margin-right: 32px;
   }
 }
 
@@ -49,16 +50,21 @@
   align-items: center;
 }
 
-.hero-desktop {
+.hero__desktop {
+  position: relative;
   @include desktop {
-    display: flex;
   }
 }
 
 .hero__img {
+  position: absolute;
   display: none;
 
   @include tablet {
+    position: absolute;
+    top: 89px;
+    right: 40px;
+
     display: block;
     border: 14px solid var(--yellow);
     border-radius: 50%;
