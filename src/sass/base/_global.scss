@@ -1,9 +1,17 @@
 body {
-  // background-color: $white-color;
-  // color: $primary-text;
+  background-color: var(--praimery-bg-color);
+  color: var(--praimery-text-color);
   margin: 0;
 
   font-family: 'Roboto', sans-serif;
+}
+
+.section {
+  padding: 60px 0;
+
+  @include media-min($tablet) {
+    padding: 100px 0;
+  }
 }
 
 .no-scroll {
