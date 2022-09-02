@@ -35,5 +35,13 @@
 
   &__subtitle {
     margin-bottom: 32px;
+    // display: inline-block;
   }
+}
+
+.cards {
+  background-color: #ffffff;
+  padding: 8px;
+  height: 200px;
+  border-radius: 0 30px 30px 30px;
 }
