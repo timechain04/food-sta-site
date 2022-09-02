@@ -10,7 +10,8 @@
     width: 100%;
     padding: 16px 0 16px 16px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: var(--green);
     }
   }
@@ -21,7 +22,8 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.14;
-    &:hover {
+    &:hover,
+    &:focus {
       color: var(--accent-green);
       text-decoration: underline;
     }
