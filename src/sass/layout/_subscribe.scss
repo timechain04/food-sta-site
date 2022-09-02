@@ -1,6 +1,18 @@
 .subscribe {
   position: relative;
-  padding: 60px 0px;
+  padding-top: 52px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+
+  @include media-min($tablet) {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+
+  @include media-min($desktop) {
+    padding-top: 0px;
+  }
 }
 
 .banan {
@@ -9,6 +21,18 @@
   right: 75px;
   width: 100%;
   max-width: 190px;
+
+  @include media-min($tablet) {
+    max-width: 275px;
+    top: -70px;
+    right: 40px;
+  }
+
+  @include media-min($desktop) {
+    max-width: 595px;
+    top: -74px;
+    right: 25px;
+  }
 }
 
 .subscribe__title {
@@ -16,6 +40,9 @@
 }
 .subscribe__text {
   margin-bottom: 40px;
+  @include media-min($tablet) {
+    margin-bottom: 24px;
+  }
 }
 
 .form__input {
@@ -32,7 +59,7 @@
     color: #505050;
   }
 
-  @media screen and(min-width: 768px) {
+  @include media-min($tablet) {
     max-width: 395px;
   }
 }
@@ -41,14 +68,23 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @media screen and(min-width: 768px) {
+  @include media-min($tablet) {
     flex-direction: row;
     align-items: baseline;
   }
 }
 
 .form__button {
-  @media screen and(min-width: 768px) {
-    margin-left: 20px;
+  @include media-min($tablet) {
+    margin-left: 22px;
+  }
+  @include media-min($desktop) {
+    margin-left: 32px;
+  }
+}
+
+.subscribe__wrap {
+  @include media-min($desktop) {
+    max-width: 656px;
   }
 }
