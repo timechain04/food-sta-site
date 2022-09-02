@@ -1,0 +1,39 @@
+.customers {
+  padding: 60px 0;
+  height: 769px;
+  max-width: 1920px;
+  background-image: url(../images/customers/customer-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
+  @include retina {
+    background-image: url('../images/customers/customer-bg-mob-2x.png');
+  }
+
+  @include media-min($tablet) {
+    height: 544px;
+    background-image: url('../images/customers/customers-bg-tab.png');
+
+    @include retina {
+      background-image: url('../images/customers/customers-bg-tab-2x.png');
+    }
+  }
+
+  @include media-min($desktop) {
+    height: 647px;
+    background-image: url('../images/customers/customer-bg-desk.png');
+
+    @include retina {
+      background-image: url('../images/customers/customer-bg-desk-2x.png');
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+  }
+}
