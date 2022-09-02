@@ -48,13 +48,31 @@
   flex-direction: column;
   gap: 24px;
 
+  @include media-min($tablet) {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @include media-min($desktop) {
+    gap: 139px;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
+    max-width: 501px;
 
     background-color: #ffffff;
     padding: 8px;
     border-radius: 0 30px 30px 30px;
+
+    @include media-min($tablet) {
+      padding: 12px;
+    }
+
+    @include media-min($desktop) {
+      padding: 14px;
+    }
   }
 
   &__text {
@@ -62,6 +80,11 @@
     font-size: 16px;
     line-height: 1.18;
     margin-bottom: 40px;
+
+    @include media-min($tablet) {
+      font-size: 18px;
+      line-height: 1.17;
+    }
   }
 
   &__person-box {
