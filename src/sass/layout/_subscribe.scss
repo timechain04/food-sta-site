@@ -1,0 +1,25 @@
+.subscribe {
+  padding-bottom: 60px;
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+}
+.subscribe__text {
+  margin-bottom: 40px;
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 11px;
+  margin-bottom: 20px;
+  background: var(--secondary-bg-color);
+  border: 0.854167px solid var(--yellow);
+  border-radius: 30px;
+
+  &::placeholder {
+    color: #505050;
+  }
+}
