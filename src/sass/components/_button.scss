@@ -13,12 +13,12 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
-  color: --praimery-text-color;
+  color: var(--praimery-text-color);
 
   transition: background-color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
-    background: --accent-green;
+    background: var(--accent-green);
   }
 }
