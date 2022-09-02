@@ -1,19 +1,50 @@
 <section class="subscribe">
   <div class="container">
-    <h2 class="subscribe__title">Subscribe to get special offers</h2>
-    <p class="subscribe__text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <form action="#" class="form">
-      <input
-        type="email"
-        name="email"
-        id="subscribe"
-        placeholder="Enter your email"
-        class="form__input"
+    <picture class="banan">
+      <source
+        srcset="
+          ./images/subscribe/banan-desktop1x.png 1x,
+          ./images/subscribe/banan-desktop2x.png 2x
+        "
+        media="(min-width: 1280px)"
       />
-      <button type="submit" class="btn">Subscribe</button>
-    </form>
+      <source
+        srcset="
+          ./images/subscribe/banan-tablet1x.png 1x,
+          ./images/subscribe/banan-tablet2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/subscribe/banan-mobile1x.png 1x,
+          ./images/subscribe/banan-mobile2x.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <img
+        src="./images/subscribe/banan-desktop1x.png"
+        alt="banan"
+        width="608"
+        height="266"
+      />
+    </picture>
+    <div class="subscribe__wrap">
+      <h2 class="subscribe__title">Subscribe to get special offers</h2>
+      <p class="subscribe__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form action="#" class="form">
+        <input
+          type="email"
+          name="email"
+          id="subscribe"
+          placeholder="Enter your email"
+          class="form__input"
+        />
+        <button type="submit" class="hero__button btn">Subscribe</button>
+      </form>
+    </div>
   </div>
 </section>
