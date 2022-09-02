@@ -5,10 +5,21 @@
   @include tablet {
     padding-bottom: 0;
   }
+  @include desktop {
+    padding-top: 14px;
+  }
+}
+
+.hero__position {
+  @include desktop {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 }
 
 .hero__title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -17,47 +28,59 @@
   color: rgba(44, 44, 44, 1);
 
   @include tablet {
-    padding-bottom: 44px;
+    margin-bottom: 44px;
     font-size: 42px;
     line-height: 120%;
-    width: 537px;
-    height: 100%;
+    max-width: 537px;
   }
   @include desktop {
     font-size: 48px;
+    margin-bottom: 28px;
+    max-width: 502.42px;
   }
 }
 .hero__text {
   max-width: 336px;
 
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
+
   color: rgba(44, 44, 44, 1);
 
   @include tablet {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     font-size: 16px;
+  }
+
+  @include desktop {
+    max-width: 502px;
   }
 }
 
 .hero__food {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .hero__desktop {
-  position: relative;
+  @include tablet {
+    position: relative;
+  }
+
   @include desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 .hero__img {
-  position: absolute;
   display: none;
 
   @include tablet {
@@ -73,8 +96,13 @@
   }
 
   @include desktop {
+    position: unset;
     width: 528px;
     max-width: none;
+    top: 14px;
+    right: 12px;
+
+    border: 26px solid var(--yellow);
   }
 }
 
