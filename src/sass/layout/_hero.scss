@@ -56,10 +56,13 @@
     display: block;
     border: 14px solid var(--yellow);
     border-radius: 50%;
+    width: 292px;
+    max-width: none;
   }
 
   @include desktop {
-    max-width: auto;
+    width: 528px;
+    max-width: none;
   }
 }
 
