@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 98px;
   height: 32px;
-  background: --green;
+  background: var(--green);
   border-radius: 30px;
   border: none;
 
@@ -19,6 +19,6 @@
 
   &:hover,
   &:focus {
-    background: --accent-green;
+    background: var(--accent-green);
   }
 }
