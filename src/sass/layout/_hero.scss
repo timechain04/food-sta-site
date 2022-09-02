@@ -49,6 +49,12 @@
   align-items: center;
 }
 
+.hero-desktop {
+  @include desktop {
+    display: flex;
+  }
+}
+
 .hero__img {
   display: none;
 
