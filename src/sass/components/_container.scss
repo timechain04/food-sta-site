@@ -1,22 +1,22 @@
 .container {
-  padding-right: 20px;
+  width: 100%;
+  // max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 20px;
-  margin: 0 auto;
-  min-width: 320px;
+  padding-right: 20px;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  @include media-min($mobile) {
+    width: $mobile;
   }
-
-  @media screen and(min-width: 768px) {
-    width: 768px;
-    padding-right: 32px;
+  @include media-min($tablet) {
     padding-left: 32px;
+    padding-right: 32px;
+    width: $tablet;
   }
-
-  @media screen and(min-width: 1280px) {
-    width: 1280px;
-    padding-right: 16px;
+  @include media-min($desktop) {
     padding-left: 16px;
+    padding-right: 16px;
+    width: $desktop;
   }
 }

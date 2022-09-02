@@ -1,4 +1,4 @@
-.section__title {
+.favorites__title {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
@@ -15,13 +15,13 @@
     }
   }
   
-  .offerings__thumb .section__title {
+  .offerings__thumb .favorites__title {
     @media screen and (max-width: 767px) {
       margin-bottom: 28px;
     }
   }
   
-  .section__description {
+  .favorites__description {
     font-size: 14px;
     line-height: 1.17;
     text-align: left;
