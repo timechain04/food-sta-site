@@ -15,8 +15,14 @@
   line-height: 150%;
 
   color: --praimery-text-color;
+
+  &:hover,
+  &:focus {
+    background: --accent-green;
+  }
 }
-.hero__button:hover,
-.hero__button:focus {
-  background: --accent-green;
-}
+
+// .hero__button:hover,
+// .hero__button:focus {
+//   background: --accent-green;
+// }
