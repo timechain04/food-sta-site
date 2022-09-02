@@ -1,12 +1,22 @@
 .container {
+<<<<<<< HEAD
   padding-right: 20px;
   padding-left: 20px;
   margin: 0 auto;
   min-width: 320px;
+=======
+  width: 100%;
+  // max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+>>>>>>> main
 
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+<<<<<<< HEAD
 
   @media screen and(min-width: 768px) {
     width: 768px;
@@ -18,5 +28,16 @@
     width: 1280px;
     padding-right: 16px;
     padding-left: 16px;
+=======
+  @include media-min($tablet) {
+    padding-left: 32px;
+    padding-right: 32px;
+    width: $tablet;
+  }
+  @include media-min($desktop) {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: $desktop;
+>>>>>>> main
   }
 }
