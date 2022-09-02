@@ -1,4 +1,3 @@
-
 @import './common';
 
 // Utils styles
@@ -17,7 +16,11 @@
 @import './components/button';
 @import './components/title';
 @import './components/subtitle';
+@import './components/navigation';
+@import './components/section';
+@import './layout/favorites';
 
+<<<<<<< HEAD
 // Layout styles
 @import './layout/hero';
 <<<<<<< Updated upstream
@@ -27,3 +30,8 @@
 =======
 >>>>>>> Stashed changes
 
+=======
+@import './layout/header';
+@import './layout/hero';
+@import './layout/customers-section';
+>>>>>>> main
