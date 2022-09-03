@@ -69,6 +69,7 @@
     background-color: #ffffff;
     padding: 8px;
     border-radius: 0 30px 30px 30px;
+    // min-height: 228px;
 
     @include media-min($tablet) {
       padding: 12px;
@@ -123,6 +124,11 @@
   display: flex;
   gap: 4px;
   margin-bottom: 28px;
+
+  &__item {
+    width: 17px;
+    height: 16px;
+  }
 
   &__icon {
     width: 17px;
