@@ -6,22 +6,96 @@
   background-repeat: no-repeat;
   background-position: bottom 0 left 43px, top 0 right 0, top 132 left 0;
   background-size: 253px 66px, 104px 259px, 110px 116px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../images/footer/footer-tablet-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
 }
 
 .footer__top-part {
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
 }
 .footer__navigation {
   margin-top: 4px;
   margin-left: 81px;
+  @include tablet {
+    margin-left: 114px;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-top: 18px;
+    margin-left: 248px;
+  }
 }
 .footer__slogan {
   margin-bottom: 12px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.5;
-  color: #2c2c2c;
+}
+.footer__input {
+  @include tablet {
+    margin-right: 13px;
+    max-width: 279px;
+  }
 }
 .footer__agreement {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 10px;
+  line-height: 1.2;
+  @include tablet {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+.footer__bottom-part {
+  font-size: 10px;
+  line-height: 1.2;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 8px;
+  }
+}
+.footer__information-list {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  text-decoration: underline;
+  color: var(--dark-green);
+  @include tablet {
+    margin-bottom: 0;
+    width: 294px;
+  }
+}
+.footer__agreement-link {
+  text-decoration: underline;
+  color: var(--dark-green);
+}
+.footer__ownership {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 145px;
+  width: 100%;
+  @include tablet {
+    max-width: 174px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
