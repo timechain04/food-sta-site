@@ -1,0 +1,17 @@
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../images/footer/fruit-1x.jpg),
+    url(../images/footer/orange-1x.jpg), url(../images/footer/apple-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 43px, top 0 right 0, top 132 left 0;
+  background-size: 253px 66px, 104px 259px, 110px 116px;
+}
+
+.footer__top-part {
+  display: flex;
+}
+.footer__navigation {
+  margin-top: 4px;
+  margin-left: 81px;
+}

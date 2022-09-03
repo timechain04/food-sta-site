@@ -4,29 +4,37 @@
       <a href="./index.html" class="logo"
         ><img src="./images/logo.svg" alt="site logo" width="66" height="52"
       /></a>
-      <nav class="navigation">
+      <nav class="navigation footer__navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="./index.html" class="">Home</a>
+            <a href="./index.html" class="navigation__link">Home</a>
           </li>
-          <li class="navigation__item"><a class="" href="#">About</a></li>
-          <li class="navigation__item"><a class="" href="#">Service</a></li>
-          <li class="navigation__item"><a class="" href="#">Menu</a></li>
-          <li class="navigation__item"><a class="" href="#">Contact</a></li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">About</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#service">Service</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#menu">Menu</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="footer__subscription">
       <p class="footer__slogan">Subscribe</p>
-      <form class="">
+      <form action="#" class="form">
         <input
           type="email"
-          class="subscribe__input"
-          placeholder="Enter your email"
           name="email"
           id="subscribe"
+          placeholder="Enter your email"
+          class="form__input"
         />
-        <button type="submit" class="subscribe__button btn">Subscribe</button>
+        <button type="submit" class="button btn form__button">Subscribe</button>
       </form>
       <p class="footer__agreement">
         By subscribing you agree to with our
