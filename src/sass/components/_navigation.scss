@@ -5,25 +5,17 @@
   }
 }
 .navigation__item {
-  @include media-max(767px) {
-    height: 51px;
-    width: 100%;
-    padding: 16px 0 16px 16px;
-    &--accent {
-      background-color: var(--green);
-    }
+  &:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 .navigation__link {
-  line-height: 1.19;
+  font-size: 14px;
+  line-height: 1.14;
   color: #000000;
-  @include tablet {
-    font-size: 14px;
-    line-height: 1.14;
-    &:hover,
-    &:focus {
-      color: var(--accent-green);
-      text-decoration: underline;
-    }
+  &:hover,
+  &:focus {
+    color: var(--accent-green);
+    text-decoration: underline;
   }
 }

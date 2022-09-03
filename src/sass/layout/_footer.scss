@@ -10,8 +10,18 @@
 
 .footer__top-part {
   display: flex;
+  margin-bottom: 40px;
 }
 .footer__navigation {
   margin-top: 4px;
   margin-left: 81px;
+}
+.footer__slogan {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+}
+.footer__agreement {
 }
