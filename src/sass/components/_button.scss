@@ -4,7 +4,7 @@
   cursor: pointer;
   width: 98px;
   height: 32px;
-  background: --green;
+  background: var(--green);
   border-radius: 30px;
   border: none;
 
@@ -13,12 +13,12 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
-  color: --praimery-text-color;
+  color: var(--praimery-text-color);
 
   transition: background-color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
-    background: --accent-green;
+    background: var(--accent-green);
   }
 }
