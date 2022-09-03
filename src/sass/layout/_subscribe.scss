@@ -1,6 +1,6 @@
 .subscribe {
   position: relative;
-  padding-top: 52px;
+  padding-top: 60px;
   padding-right: 0px;
   padding-bottom: 60px;
   padding-left: 0px;
@@ -17,21 +17,21 @@
 
 .banan {
   position: absolute;
-  top: -40px;
-  right: 75px;
+  top: -103px;
+  right: 50px;
   width: 100%;
-  max-width: 190px;
+  max-width: 180px;
 
   @include media-min($tablet) {
     max-width: 275px;
-    top: -70px;
-    right: 40px;
+    top: -154px;
+    right: 5px;
   }
 
   @include media-min($desktop) {
-    max-width: 595px;
-    top: -74px;
-    right: 25px;
+    max-width: 560px;
+    top: -72px;
+    right: 20px;
   }
 }
 
@@ -39,6 +39,7 @@
   margin-bottom: 20px;
   text-transform: capitalize;
 }
+
 .subscribe__text {
   margin-bottom: 40px;
   @include media-min($tablet) {
