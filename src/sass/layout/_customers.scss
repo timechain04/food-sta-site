@@ -3,7 +3,7 @@
   padding: 60px 0;
   height: 769px;
   max-width: 1920px;
-  background-image: url(../images/customers/customer-bg-mob.png);
+  background-image: url('../images/customers/customer-bg-mob.png');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 100%;
@@ -14,6 +14,10 @@
 
   @include media-min($mobile) {
     height: 700px;
+    background-image: url('../images/customers/customer-bg-mob-480.png');
+    @include retina {
+      background-image: url('../images/customers/customer-bg-mob-480-2x.png');
+    }
   }
 
   @include media-min($tablet) {
