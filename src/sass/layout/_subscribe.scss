@@ -1,0 +1,90 @@
+.subscribe {
+  position: relative;
+  padding-top: 52px;
+  padding-right: 0px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+
+  @include media-min($tablet) {
+    padding-top: 82px;
+    padding-bottom: 100px;
+  }
+
+  @include media-min($desktop) {
+    padding-top: 0px;
+  }
+}
+
+.banan {
+  position: absolute;
+  top: -40px;
+  right: 75px;
+  width: 100%;
+  max-width: 190px;
+
+  @include media-min($tablet) {
+    max-width: 275px;
+    top: -70px;
+    right: 40px;
+  }
+
+  @include media-min($desktop) {
+    max-width: 595px;
+    top: -74px;
+    right: 25px;
+  }
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+}
+.subscribe__text {
+  margin-bottom: 40px;
+  @include media-min($tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 11px;
+  margin-bottom: 20px;
+  background: var(--secondary-bg-color);
+  border: 0.854167px solid var(--yellow);
+  border-radius: 30px;
+
+  &::placeholder {
+    color: #505050;
+  }
+
+  @include media-min($tablet) {
+    max-width: 395px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include media-min($tablet) {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.form__button {
+  @include media-min($tablet) {
+    margin-left: 22px;
+  }
+  @include media-min($desktop) {
+    margin-left: 32px;
+  }
+}
+
+.subscribe__wrap {
+  @include media-min($desktop) {
+    max-width: 656px;
+  }
+}
