@@ -60,6 +60,31 @@
   }
 }
 
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  @include tablet {
+  }
+  @include desktop {
+    left: 693px;
+    right: auto;
+    top: 128px;
+  }
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  @include tablet {
+    content: '';
+    background-image: <svg class= 'ikon-envelope' width= '16px' height= '12px' >
+      <use href= './img/svg/symbol-defs.svg#envelope' ></use> </svg>;
+  }
+
+  @include desktop {
+    right: 10px;
+    left: auto;
+  }
+}
+
 .swiper {
   display: none;
   @include tablet {
