@@ -80,28 +80,43 @@
   }
 }
 
-.hero__img {
-  display: none;
+// .hero__img {
 
+//   display: none;
+
+//   @include tablet {
+//     position: absolute;
+//     top: 89px;
+//     right: 40px;
+//     display: block;
+//     width: 292px;
+//     max-width: none;
+//   }
+
+//   @include desktop {
+//     position: unset;
+//     width: 528px;
+//     max-width: none;
+//     top: 14px;
+//     right: 12px;
+//   }
+// }
+
+.swiper {
   @include tablet {
     position: absolute;
     top: 89px;
     right: 40px;
-
     display: block;
-    border: 14px solid var(--yellow);
-    border-radius: 50%;
     width: 292px;
     max-width: none;
+    border-radius: 50%;
+    border: 14px solid var(--yellow);
   }
 
   @include desktop {
     position: unset;
     width: 528px;
-    max-width: none;
-    top: 14px;
-    right: 12px;
-
     border: 26px solid var(--yellow);
   }
 }
