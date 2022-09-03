@@ -1,11 +1,29 @@
-<section class="section">
+<section class="section background">
   <div class="container offerings">
-    <picture>
+    <div class="offerings__image">
+      <div class="offerings__image--inside">
+        <img
+        class="offerings__image--item"
+        src="./images/offerings/apple-mobile2x.png"
+        alt="дизайн"
+        width="201"
+        height="255"
+        />
+        <img
+        class="offerings__image--shadow"
+        src="./images/offerings/apple-shadow-mobile2x.png"
+        alt="дизайн"
+        width="201"
+        height="255"
+        />
+      </div>
+    </div>
+    <!-- <picture>
       <source srcset="#" media="(min-width:1200px)" />
       <source srcset="#" media="(min-width:768px)" />
-      <source srcset="#" media="(max-width:767px)" />
-      <img class="offerings__img" src="#" alt="Яблоко" />
-    </picture>
+      <source srcset="#" media="(max-width:480px)" />
+      <img class="offerings__img" src="./images/offerings/apple-mobile2x.png" alt="Яблоко" />
+    </picture> -->
 
     <h2 class="offerings__title title">What’s Special About Our Offerings</h2>
     <p class="offerings__description subtitle">
@@ -15,9 +33,11 @@
     </p>
     <ul class="offerings__list list">
       <li class="offerings__item">
-        <svg class="offerings__icon">
-          <use href="../src/images/sprite.svg#icon-rocket"></use>
-        </svg>
+        <div class="wrapper--circle">
+          <svg class="offerings__icon">
+            <use href="../src/images/sprite.svg#icon-rocket"></use>
+          </svg>
+        </div>
         <h3 class="offerings__title--small">Fasest Delivery</h3>
         <p class="offerings-item__text subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -25,9 +45,11 @@
         </p>
       </li>
       <li class="offerings__item">
-        <svg offerings__icon>
-          <use href="../src/images/sprite.svg#icon-touch"></use>
-        </svg>
+        <div class="wrapper--circle">
+          <svg class="offerings__icon">
+            <use href="../src/images/sprite.svg#icon-touch"></use>
+          </svg>
+        </div>
         <h3 class="offerings__title--small">Easy to order</h3>
         <p class="offerings-item__text subtitle">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
