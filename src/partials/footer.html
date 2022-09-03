@@ -1,37 +1,47 @@
 <footer class="footer">
   <div class="footer__container container">
-    <div class="footer__top-part">
-      <a href="./index.html" class="logo"
-        ><img src="./images/logo.svg" alt="site logo" width="66" height="52"
-      /></a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="./index.html" class="">Home</a>
-          </li>
-          <li class="navigation__item"><a class="" href="#">About</a></li>
-          <li class="navigation__item"><a class="" href="#">Service</a></li>
-          <li class="navigation__item"><a class="" href="#">Menu</a></li>
-          <li class="navigation__item"><a class="" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer__subscription">
-      <p class="footer__slogan">Subscribe</p>
-      <form class="">
-        <input
-          type="email"
-          class="subscribe__input"
-          placeholder="Enter your email"
-          name="email"
-          id="subscribe"
-        />
-        <button type="submit" class="subscribe__button btn">Subscribe</button>
-      </form>
-      <p class="footer__agreement">
-        By subscribing you agree to with our
-        <a class="footer__agreement-link" href="#">Privacy Policy</a>
-      </p>
+    <div class="footer__wrapper">
+      <div class="footer__top-part">
+        <a href="./index.html" class="logo"
+          ><img src="./images/logo.svg" alt="site logo" width="66" height="52"
+        /></a>
+        <nav class="navigation footer__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="./index.html" class="navigation__link">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">About</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#service">Service</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#menu">Menu</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__subscription">
+        <p class="footer__slogan">Subscribe</p>
+        <form action="#" class="form">
+          <input
+            type="email"
+            name="email"
+            id="subscribe"
+            placeholder="Enter your email"
+            class="footer__input form__input"
+          />
+          <button type="submit" class="button footer__button">Subscribe</button>
+        </form>
+        <p class="footer__agreement">
+          By subscribing you agree to with our
+          <a class="footer__agreement-link" href="#">Privacy Policy</a>
+        </p>
+      </div>
     </div>
     <div class="footer__bottom-part">
       <ul class="footer__information-list">
@@ -43,7 +53,7 @@
           <a href="#">Cookies Settings</a>
         </li>
       </ul>
-      <p class="">2022 FoodSta. All right reserved.</p>
+      <p class="footer__ownership">2022 FoodSta. All right reserved.</p>
     </div>
   </div>
 </footer>
