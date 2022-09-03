@@ -37,6 +37,7 @@
 
 .subscribe__title {
   margin-bottom: 20px;
+  text-transform: capitalize;
 }
 .subscribe__text {
   margin-bottom: 40px;
@@ -57,10 +58,19 @@
 
   &::placeholder {
     color: #505050;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
   }
 
   @include media-min($tablet) {
     max-width: 395px;
+    margin-right: 22px;
+    margin-bottom: 0px;
+  }
+
+  @include media-min($desktop) {
+    margin-right: 32px;
   }
 }
 
@@ -96,12 +106,9 @@
 // }
 
 .form__button {
-  @include media-min($tablet) {
-    margin-left: 22px;
-  }
-  @include media-min($desktop) {
-    margin-left: 32px;
-  }
+  width: 103px;
+  height: 42px;
+  padding: 11px 22px;
 }
 
 .subscribe__wrap {
