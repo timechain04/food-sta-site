@@ -45,6 +45,10 @@
   display: flex;
   margin-bottom: 40px;
   align-items: center;
+  @include desktop {
+    height: 66px;
+    margin-bottom: 147px;
+  }
 }
 .footer__navigation {
   margin-top: 4px;
@@ -54,7 +58,6 @@
     margin-top: 0;
   }
   @include desktop {
-    margin-top: 18px;
     margin-left: 248px;
   }
 }
@@ -100,7 +103,6 @@
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
-    margin-bottom: 8px;
   }
 }
 .footer__information-list {
@@ -113,6 +115,9 @@
   @include tablet {
     margin-bottom: 0;
     width: 294px;
+  }
+  @include desktop {
+    margin-bottom: 0;
   }
 }
 .footer__agreement-link {
