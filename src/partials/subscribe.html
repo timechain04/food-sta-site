@@ -1,34 +1,36 @@
 <section class="subscribe">
   <div class="container">
-    <picture class="banan">
-      <source
-        srcset="
-          ./images/subscribe/banan-desktop1x.png 1x,
-          ./images/subscribe/banan-desktop2x.png 2x
-        "
-        media="(min-width: 1280px)"
-      />
-      <source
-        srcset="
-          ./images/subscribe/banan-tablet1x.png 1x,
-          ./images/subscribe/banan-tablet2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/subscribe/banan-mobile1x.png 1x,
-          ./images/subscribe/banan-mobile2x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img
-        src="./images/subscribe/banan-desktop1x.png"
-        alt="banan"
-        width="608"
-        height="266"
-      />
-    </picture>
+    <div data-aos="fade-up-left">
+      <picture class="banan">
+        <source
+          srcset="
+            ./images/subscribe/banan-desktop1x.png 1x,
+            ./images/subscribe/banan-desktop2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/banan-tablet1x.png 1x,
+            ./images/subscribe/banan-tablet2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/subscribe/banan-mobile1x.png 1x,
+            ./images/subscribe/banan-mobile2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/subscribe/banan-desktop1x.png"
+          alt="banan"
+          width="608"
+          height="266"
+        />
+      </picture>
+    </div>
     <div class="subscribe__wrap">
       <h2 class="subscribe__title title">Subscribe to get special offers</h2>
       <p class="subscribe__text subtitle">
@@ -45,6 +47,9 @@
         />
         <button type="submit" class="button btn form__button">Subscribe</button>
       </form>
+      <p class="error">
+        Please enter a valid email address (example@gmail.com)
+      </p>
     </div>
   </div>
 </section>
