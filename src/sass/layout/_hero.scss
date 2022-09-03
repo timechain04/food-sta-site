@@ -6,15 +6,8 @@
     padding-bottom: 0;
   }
   @include desktop {
-    padding-top: 14px;
-  }
-}
-
-.hero__position {
-  @include desktop {
     position: relative;
-    top: 0;
-    right: 0;
+    padding-top: 159px;
   }
 }
 
@@ -61,22 +54,9 @@
   }
 }
 
-.hero__food {
-  @include desktop {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .hero__desktop {
   @include tablet {
     position: relative;
-  }
-
-  @include desktop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
@@ -94,9 +74,10 @@
   }
 
   @include desktop {
-    position: unset;
     width: 528px;
     border: 26px solid var(--yellow);
+    top: -145px;
+    right: 30px;
   }
 }
 
