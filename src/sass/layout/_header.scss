@@ -1,5 +1,5 @@
 .header {
-  background-color: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
 .header-container {
   position: relative;
@@ -53,8 +53,15 @@
   }
 }
 .header__mob-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.19;
   color: #000000;
+  &:hover,
+  &:focus {
+    color: var(--accent-green);
+    text-decoration: underline;
+  }
 }
 .header__navigation {
   display: none;

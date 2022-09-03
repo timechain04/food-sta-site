@@ -1,3 +1,6 @@
+.footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+}
 .footer__container {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -6,17 +9,38 @@
   background-repeat: no-repeat;
   background-position: bottom 0 left 43px, top 0 right 0, top 132 left 0;
   background-size: 253px 66px, 104px 259px, 110px 116px;
+  @include retina {
+    background-image: url(../images/footer/fruit-2x.jpg),
+      url(../images/footer/orange-2x.jpg), url(../images/footer/apple-2x.jpg);
+  }
 
   @include tablet {
     padding-top: 100px;
     padding-bottom: 100px;
     background-image: url(../images/footer/footer-tablet-1x.jpg);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
+    background-position: bottom 0 right 0;
+    background-size: 785px 506px;
+    @include retina {
+      background-image: url(../images/footer/footer-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/footer/footer-desktop-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom 0 left 53px;
+    background-size: 1211px 266px;
+    @include retina {
+      background-image: url(../images/footer/footer-desktop-2x.jpg);
+    }
   }
 }
-
+.footer__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .footer__top-part {
   display: flex;
   margin-bottom: 40px;
@@ -45,6 +69,14 @@
     margin-right: 13px;
     max-width: 279px;
   }
+}
+.footer__button {
+  width: 103px;
+  height: 42px;
+  padding: 11px 22px;
+  background-color: #ffffff;
+  border: 0.854167px solid #7eb101;
+  border-radius: 30px;
 }
 .footer__agreement {
   margin-top: 20px;
