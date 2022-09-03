@@ -1,12 +1,16 @@
 @import './common';
 
+// Utils styles
 @import './utils/brackpoints';
 @import './utils/mixins';
 @import './utils/vars';
 
+// Base styles
 @import './base/reset';
 @import './base/global';
 
+// components styles
+@import './components/section';
 @import './components/container';
 @import './components/logo';
 @import './components/button';
@@ -15,8 +19,9 @@
 @import './components/navigation';
 @import './components/section';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/subscribe';
-@import './layout/customers';
 
+// Layout styles
+@import './layout/hero';
+@import './layout/favorites';
+@import './layout/header';
+@import './layout/customers';
