@@ -56,7 +56,7 @@
 }
 .footer__navigation {
   margin-top: 4px;
-  margin-right: 81px;
+  margin-right: calc(50% - 49px);
   @include tablet {
     margin-left: 114px;
     margin-top: 0;
