@@ -2,6 +2,7 @@
 
 // Utils styles
 @import './utils/brackpoints';
+
 @import './utils/mixins';
 @import './utils/vars';
 
@@ -19,6 +20,11 @@
 @import './components/navigation';
 @import './components/section';
 
+@import './layout/header';
+@import './layout/hero';
+@import './layout/subscribe';
+@import './layout/customers';
+@import './layout/footer';
 
 
 // Layout styles
@@ -26,3 +32,4 @@
 @import './layout/favorites';
 @import './layout/header';
 @import './layout/customers';
+@import './layout/subscribe';
