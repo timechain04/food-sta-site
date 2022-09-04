@@ -76,6 +76,7 @@
 }
 
 .form {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -86,25 +87,45 @@
   }
 }
 
-// .error {
-//   font-weight: 500;
-//   font-size: 11px;
-//   line-height: 1.36;
-//   color: #ff705d;
-//   display: none;
-// }
+.error {
+  position: absolute;
+  bottom: 44px;
+  left: 15px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.5;
+  color: #ff705d;
+  display: none;
 
-// .form__input:not(:focus):not(:placeholder-shown):valid {
-//   border-color: #7eb101;
-// }
+  @include media-min($tablet) {
+    bottom: 0px;
+    top: 48px;
+    left: 13px;
+    font-size: 12px;
+  }
 
-// .form__input:not(:focus):not(:placeholder-shown):invalid {
-//   border-color: #ff705d;
-// }
+  &::before {
+    content: '';
+    background-image: url('../images/error.svg');
+    margin-right: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 12px;
+    height: 12px;
+  }
+}
 
-// .form__input:not(:focus):not(:placeholder-shown):invalid + .error {
-//   display: block;
-// }
+.form__input:not(:focus):not(:placeholder-shown):valid {
+  border-color: #7eb101;
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: #ff705d;
+}
+
+.form__input:not(:focus):not(:placeholder-shown):invalid + .error {
+  display: block;
+}
 
 .form__button {
   width: 103px;
