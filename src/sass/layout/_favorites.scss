@@ -8,10 +8,11 @@
     text-align: center;
     max-width: 280px;
 
-    @include desktop   {
+    @include tablet {
       max-width: 656px;
     }
   }
+
 
   &__about {
     display: flex;
