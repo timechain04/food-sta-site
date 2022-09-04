@@ -15,12 +15,15 @@
 
 .offerings {
   // width: 100%;
-  padding-top: 70px;
-  padding-bottom: 60px;
+  // padding-top: 70px;
+  // padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; 
+  @include media-min(1280) {
+    flex-direction: row;
+  } 
   // @include mobile {
   //   align-items: flex-start; 
   // }
@@ -44,13 +47,15 @@
       margin-left: 0;
       margin-right: 0;
       min-width: 357px;
-    } 
-    width: 280px;
-    height: 280px;
-    @include media-min(768px) {
       width: 357px;
       height: 357px;
     } 
+    width: 280px;
+    height: 280px;
+    // @include media-min(768px) {
+    //   width: 357px;
+    //   height: 357px;
+    // } 
     border-radius: 50%;
     background-color: #FFE550;
     border: 3px solid rgba(255, 255, 255, 0.5);
@@ -90,25 +95,45 @@
     }
   }
 
+  &__description-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
+  }
+
   &__title {
     margin-bottom: 28px;
     padding-top: 60px;
+    max-width: 280px;
+    @include media-min(768px) {
+      max-width: 526px;
+    } 
   }
   &__description {
     margin-bottom: 28px;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.41px;
+    max-width: 272px;
+    @include media-min(768px) {
+      max-width: 500px;
+    } 
   }
   &__list {
-    margin-bottom: 28px;
+    margin-bottom: 29px;
     display: flex;
     flex-direction: column;
     gap: 28px;
+    @include media-min(768px) {
+      flex-direction: row;
+      gap: 116px;
+    } 
   }
   &__item {
     display: flex;
     flex-direction: column;
+    max-width: 252px;
   }
   &__icon {
     width: 32px;
@@ -157,18 +182,18 @@
     gap: 44px;
     margin-left: 29px;
   } 
-}
-
-.offerings__image--allmost-transparent {
-  display: none;
   @include media-min(768px) {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    gap: 44px;
-    margin-left: 29px;
+    display: none;
+    width: 550px;
   } 
 }
+
+.offerings-item__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
 
 .background {
   background-image: url('../images/offerings/offerings-bcg-320-mobile.png');
