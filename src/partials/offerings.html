@@ -1,29 +1,89 @@
 <section class="section background">
   <div class="container offerings">
-    <div class="offerings__image">
-      <div class="offerings__image--inside">
-        <img
-        class="offerings__image--item"
-        src="./images/offerings/apple-mobile2x.png"
-        alt="дизайн"
-        width="201"
-        height="255"
-        />
-        <img
-        class="offerings__image--shadow"
-        src="./images/offerings/apple-shadow-mobile2x.png"
-        alt="дизайн"
-        width="201"
-        height="255"
-        />
+    <div class="row-positioner">
+      <div class="offerings__image">
+        <div class="offerings__image--inside">
+          <picture>
+            <source
+              srcset="./images/offerings/apple-tablet-big2x.png"
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="./images/offerings/apple-tablet-big2x.png"
+              media="(min-width:768px)"
+              width="257"
+              height="352"
+            />
+            <source
+              srcset="./images/offerings/apple-mobile2x.png"
+              media="(max-width:480px)"
+            />
+            <img
+              class="offerings__image--item"
+              src="./images/offerings/apple-mobile2x.png"
+              alt="Яблоко"
+              width="201"
+              height="255"
+            />
+          </picture>
+          <picture>
+            <source
+              srcset="
+              ./images/offerings/apple-shadow-mobile2x.png x1, 
+              ./images/offerings/apple-shadow-mobile2x.png x2
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="./images/offerings/apple-shadow-fablet2x.png"
+              media="(min-width:768px)"
+              width="163"
+              height="58"
+            />
+            <source
+              srcset="./images/offerings/apple-shadow-mobile2x.png"
+              media="(max-width:480px)"
+            />
+            <img
+              class="offerings__image--shadow"
+              src="./images/offerings/apple-shadow-mobile2x.png"
+              alt="Яблоко"
+              width="128"
+              height="44"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="offerings__image--transparent">
+        <picture>
+          <source
+            srcset="./images/offerings/apple-tablet-medium2x.png"
+            media="(min-width:768px)"
+          />
+          <img
+            class="offerings__image--half-transparent"
+            src="./images/offerings/apple-tablet-medium2x.png"
+            alt="Яблоко"
+            width="166"
+            height="210"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/offerings/apple-tablet-small2x.png"
+            media="(min-width:768px)"
+          />
+          <img
+            class="offerings__image--allmost-transparent"
+            src="./images/offerings/apple-tablet-small2x.png"
+            alt="Яблоко"
+            width="108"
+            height="136"
+          />
+        </picture>
       </div>
     </div>
-    <!-- <picture>
-      <source srcset="#" media="(min-width:1200px)" />
-      <source srcset="#" media="(min-width:768px)" />
-      <source srcset="#" media="(max-width:480px)" />
-      <img class="offerings__img" src="./images/offerings/apple-mobile2x.png" alt="Яблоко" />
-    </picture> -->
+
 
     <h2 class="offerings__title title">What’s Special About Our Offerings</h2>
     <p class="offerings__description subtitle">
@@ -59,7 +119,8 @@
     </ul>
     <div class="offerings__action-part">
       <button class="offerings__button button" type="button">Order Now</button>
-      <a class="offerings__link" href="#">Read More
+      <a class="offerings__link" href="#"
+        >Read More
         <svg class="offerings__icon-arrow">
           <use href="../src/images/sprite.svg#icon-reed-more-arrow"></use>
         </svg>

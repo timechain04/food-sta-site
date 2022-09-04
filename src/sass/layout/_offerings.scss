@@ -1,3 +1,18 @@
+
+.row-positioner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  @include media-min(768px) {
+    flex-direction: row;
+    align-items: flex-end;
+    // justify-content: start;
+    justify-content: space-between;
+  } 
+}
+
 .offerings {
   width: 100%;
   padding-top: 70px;
@@ -25,9 +40,17 @@
   &__image {
     margin-left: auto;
     margin-right: auto;
-    
+    @include media-min(768px) {
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 357px;
+    } 
     width: 280px;
     height: 280px;
+    @include media-min(768px) {
+      width: 357px;
+      height: 357px;
+    } 
     border-radius: 50%;
     background-color: #FFE550;
     border: 3px solid rgba(255, 255, 255, 0.5);
@@ -41,17 +64,29 @@
       border-radius: 50%;
       background-color: #FFFFFF;
       position: relative;
+      @include media-min(768px) {
+        width: 325px;
+        height: 325px;
+      } 
     }
     &--item {
       position: absolute;
       top: -41;
       left: 30;
       z-index: 1;
+      @include media-min(768px) {
+        top: -51;
+      } 
     }
+
     &--shadow {
       position: absolute;
-      bottom: 0;
-      left: 35;
+      bottom: 29;
+      left: 61;
+      @include media-min(768px) {
+        bottom: 22;
+        left: 69;
+      } 
     }
   }
 
@@ -112,6 +147,18 @@
   }
 }
 
+.offerings__image--transparent {
+  display: none;
+  @include media-min(768px) {
+    width: 100%;
+    display: flex;
+    // align-items: flex-end;
+    // padding-bottom: 67px;
+    // gap: 44px;
+    justify-content: space-between;
+    margin-left: 29px;
+  } 
+}
 
 .background {
   background-image: url('../images/offerings/offerings-bcg-320-mobile.png');
