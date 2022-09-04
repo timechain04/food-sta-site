@@ -1,0 +1,47 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close-btn" type="button">
+      <svg class="modal__close-icon">
+        <use href="./images/sprite.svg#icon-close-icon"></use>
+      </svg>
+    </button>
+    <section class="modal__form">
+      <h1 class="modal__title">Order Form</h1>
+      <form class="form-modal" autocomplete="off">
+        <div role="group">
+          <div class="form-modal__field">
+            <label for="name" class="form-modal__label">Name</label>
+            <input
+              type="text"
+              class="form-modal__input"
+              name="name"
+              id="name"
+              placeholder="Your name"
+            />
+          </div>
+          <div class="form-modal__field">
+            <label for="phone" class="form-modal__label">Phone number</label>
+            <input
+              type="tel"
+              class="form-modal__input"
+              name="phone"
+              id="phone"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            />
+          </div>
+          <div class="form-modal__field">
+            <label for="emeil" class="form-modal__label">E-mail</label>
+            <input
+              type="email"
+              class="form-modal__input"
+              name="emeil"
+              id="emeil"
+              placeholder="example@gmail.com"
+            />
+          </div>
+        </div>
+        <button type="submit" class="button form-modal__btn">Send</button>
+      </form>
+    </section>
+  </div>
+</div>

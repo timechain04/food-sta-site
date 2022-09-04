@@ -3,18 +3,12 @@
   padding-bottom: 50px;
 
   @include tablet {
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
-  @include desktop {
-    padding-top: 14px;
-  }
-}
-
-.hero__position {
   @include desktop {
     position: relative;
-    top: 0;
-    right: 0;
+    padding-top: 159px;
+    padding-bottom: 0px;
   }
 }
 
@@ -61,65 +55,177 @@
   }
 }
 
-.hero__food {
-  @include desktop {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .hero__desktop {
   @include tablet {
     position: relative;
   }
+}
 
-  @include desktop {
+// ____________________button-prev_______________________
+
+.swiper-button-prev {
+  position: absolute;
+  display: none;
+
+  z-index: 10;
+  cursor: pointer;
+
+  margin-top: 0;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: box-shadow 250ms var(--timing-function);
+
+  @include tablet {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    width: 34px;
+    height: 28px;
+
+    top: 235;
+    right: 334px;
+    left: auto;
   }
+  @include desktop {
+    top: 121px;
+    right: 576px;
+
+    width: 48px;
+    height: 40px;
+  }
+}
+
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.swiper-button-prev:hover .next-ikon,
+.swiper-button-prev:focus .next-ikon {
+  fill: var(--dark-green);
+  transition: fill 250ms var(--timing-function);
+}
+
+// ___________________________button-next______________________
+
+.swiper-button-next {
+  position: absolute;
+  display: none;
+
+  z-index: 10;
+  cursor: pointer;
+
+  margin-top: 0;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  transition: box-shadow 250ms var(--timing-function);
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 235;
+    right: 32px;
+
+    width: 34px;
+    height: 28px;
+  }
+
+  @include desktop {
+    top: 121px;
+    right: 16px;
+
+    width: 48px;
+    height: 40px;
+  }
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.swiper-button-next:hover .next-ikon,
+.swiper-button-next:focus .next-ikon {
+  fill: var(--dark-green);
+  transition: fill 250ms var(--timing-function);
+}
+
+.next-ikon {
+  @include tablet {
+    width: 20.34px;
+    height: auto;
+  }
+  @include desktop {
+    width: 29.05px;
+    height: auto;
+  }
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.swiper-button-next:after {
+  content: '';
+}
+.swiper-button-prev:after {
+  content: '';
 }
 
 .swiper {
   display: none;
+
   @include tablet {
     position: absolute;
     top: 89px;
     right: 40px;
     display: block;
-    width: 292px;
+    width: 320px;
+    height: 320px;
+
     max-width: none;
     border-radius: 50%;
     border: 14px solid var(--yellow);
   }
 
   @include desktop {
-    position: unset;
-    width: 528px;
+    width: 580px;
+    height: 580px;
+
+    top: -145px;
+    right: 30px;
+
     border: 26px solid var(--yellow);
   }
 }
 
-.hero__button {
-  padding: 6px 18px;
+// .hero__button {
+//   padding: 6px 18px;
 
-  cursor: pointer;
-  width: 98px;
-  height: 32px;
-  background: --green;
-  border-radius: 30px;
-  border: none;
+//   cursor: pointer;
+//   width: 98px;
+//   height: 32px;
+//   background: --green;
+//   border-radius: 30px;
+//   border: none;
 
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 150%;
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 13px;
+//   line-height: 150%;
 
-  color: --praimery-text-color;
+//   color: --praimery-text-color;
 
-  &__button:hover,
-  &__button:focus {
-    background: --accent-green;
-  }
-}
+//   &__button:hover,
+//   &__button:focus {
+//     background: --accent-green;
+//   }
+// }

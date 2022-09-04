@@ -1,38 +1,41 @@
 .footer {
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-}
-.footer__container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-image: url(../images/footer/fruit-1x.jpg),
     url(../images/footer/orange-1x.jpg), url(../images/footer/apple-1x.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom 0 left 43px, top 0 right 0, top 132 left 0;
   background-size: 253px 66px, 104px 259px, 110px 116px;
+  background-position: bottom 0 left calc(50% + 19px), top 0 right 0,
+    top 132 left 0;
+  background-repeat: no-repeat;
   @include retina {
     background-image: url(../images/footer/fruit-2x.jpg),
       url(../images/footer/orange-2x.jpg), url(../images/footer/apple-2x.jpg);
   }
-
   @include tablet {
-    padding-top: 100px;
-    padding-bottom: 100px;
     background-image: url(../images/footer/footer-tablet-1x.jpg);
-    background-repeat: no-repeat;
+    background-size: cover;
     background-position: bottom 0 right 0;
-    background-size: 785px 506px;
+    background-repeat: no-repeat;
     @include retina {
       background-image: url(../images/footer/footer-tablet-2x.jpg);
     }
   }
   @include desktop {
     background-image: url(../images/footer/footer-desktop-1x.jpg);
-    background-repeat: no-repeat;
-    background-position: bottom 0 left 53px;
     background-size: 1211px 266px;
+    background-position: bottom 0 right calc(50% - 16px);
+    background-repeat: no-repeat;
     @include retina {
       background-image: url(../images/footer/footer-desktop-2x.jpg);
     }
+  }
+}
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 .footer__wrapper {
@@ -44,21 +47,30 @@
 .footer__top-part {
   display: flex;
   margin-bottom: 40px;
-  align-items: center;
+  @include media-max($tablet) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @include tablet {
+    align-items: center;
+  }
+
   @include desktop {
-    height: 66px;
-    margin-bottom: 147px;
+    height: 52px;
+    margin-bottom: 129px;
   }
 }
 .footer__navigation {
   margin-top: 4px;
-  margin-left: 81px;
+  margin-right: calc(50% - 49px);
   @include tablet {
+    width: 319px;
+    margin-right: 0;
     margin-left: 114px;
     margin-top: 0;
   }
   @include desktop {
-    margin-left: 248px;
+    margin-left: 148px;
   }
 }
 .footer__slogan {
@@ -67,20 +79,13 @@
   font-size: 14px;
   line-height: 1.5;
 }
-.footer__input {
+.footer__input.form__input {
   @include tablet {
     margin-right: 13px;
-    max-width: 279px;
+    width: 279px;
   }
 }
-.footer__button {
-  width: 103px;
-  height: 42px;
-  padding: 11px 22px;
-  background-color: #ffffff;
-  border: 0.854167px solid #7eb101;
-  border-radius: 30px;
-}
+
 .footer__agreement {
   margin-top: 20px;
   margin-bottom: 60px;
@@ -91,6 +96,9 @@
     margin-bottom: 100px;
     font-size: 12px;
     line-height: 1.17;
+  }
+  @include desktop {
+    margin-bottom: 80px;
   }
 }
 
