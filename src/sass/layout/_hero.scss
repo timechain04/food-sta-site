@@ -60,9 +60,10 @@
   }
 }
 
-.swiper-button-prev,
-.swiper-rtl .swiper-button-next {
+.swiper-button-prev {
+  display: none;
   @include tablet {
+    position: absolute;
   }
   @include desktop {
     left: 693px;
@@ -71,18 +72,33 @@
   }
 }
 
-.swiper-button-next,
-.swiper-rtl .swiper-button-prev {
+.swiper-button-next {
   @include tablet {
-    content: '';
-    background-image: <svg class= 'ikon-envelope' width= '16px' height= '12px' >
-      <use href= './img/svg/symbol-defs.svg#envelope' ></use> </svg>;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    top: 122px;
+    z-index: 10;
+    cursor: pointer;
+
+    width: 40px;
+    height: 48px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
   }
 
   @include desktop {
-    right: 10px;
-    left: auto;
   }
+}
+
+.next-ikon {
+}
+
+.swiper-button-next:after {
+  content: '';
 }
 
 .swiper {
