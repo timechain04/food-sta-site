@@ -1,10 +1,12 @@
 .button {
   padding: 6px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   cursor: pointer;
-  width: 98px;
-  height: 32px;
-  background: var(--green);
+  // width: 98px;
+  // height: 32px;
   border-radius: 30px;
   border: none;
 
@@ -14,11 +16,47 @@
   font-size: 13px;
   line-height: 150%;
   color: var(--praimery-text-color);
+}
+
+.button-color {
+  @extend .button;
+  width: 98px;
+  height: 32px;
+  background: var(--green);
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-green);
+  }
+}
+
+.button-white {
+  @extend .button;
+  width: 106px;
+  height: 40px;
+  background: #fff;
+  border: 2px solid var(--dark-green);
+
+  transition: border 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #597d00;
+  }
+}
+
+.button-white-color {
+  @extend .button;
+  width: 103px;
+  height: 42px;
+  background: #fff;
+  border: 1px solid var(--dark-green);
 
   transition: background-color 250ms var(--timing-function);
 
   &:hover,
   &:focus {
-    background: var(--accent-green);
+    background-color: var(--yellow);
   }
 }
