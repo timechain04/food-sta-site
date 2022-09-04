@@ -21,8 +21,8 @@
   }
   @include desktop {
     background-image: url(../images/footer/footer-desktop-1x.jpg);
-    background-size: auto;
-    background-position: bottom 0 left 53px;
+    background-size: 1211px 266px;
+    background-position: bottom 0 right calc(50% - 16px);
     background-repeat: no-repeat;
     @include retina {
       background-image: url(../images/footer/footer-desktop-2x.jpg);
@@ -46,23 +46,31 @@
 }
 .footer__top-part {
   display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
-  align-items: flex-start;
+  @include media-max($tablet) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @include tablet {
+    align-items: center;
+  }
+
   @include desktop {
-    height: 66px;
-    margin-bottom: 147px;
+    height: 52px;
+    margin-bottom: 129px;
   }
 }
 .footer__navigation {
   margin-top: 4px;
   margin-right: calc(50% - 49px);
   @include tablet {
+    width: 319px;
+    margin-right: 0;
     margin-left: 114px;
     margin-top: 0;
   }
   @include desktop {
-    margin-left: 248px;
+    margin-left: 148px;
   }
 }
 .footer__slogan {
@@ -95,6 +103,9 @@
     margin-bottom: 100px;
     font-size: 12px;
     line-height: 1.17;
+  }
+  @include desktop {
+    margin-bottom: 80px;
   }
 }
 
