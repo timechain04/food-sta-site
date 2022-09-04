@@ -20,15 +20,11 @@
 @import './components/navigation';
 @import './components/section';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/subscribe';
-@import './layout/customers';
-@import './layout/footer';
-
 // Layout styles
-@import './layout/hero';
-@import './layout/favorites';
 @import './layout/header';
+@import './layout/hero';
+@import './layout/offerings';
+@import './layout/favorites';
 @import './layout/customers';
 @import './layout/subscribe';
+@import './layout/footer';
