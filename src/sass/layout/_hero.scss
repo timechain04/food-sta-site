@@ -1,14 +1,13 @@
 .hero {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 
   @include tablet {
     padding-bottom: 0px;
-    padding-top: 0px;
   }
   @include desktop {
     position: relative;
-    padding-top: 0px;
+    padding-top: 159px;
     padding-bottom: 0px;
   }
 }
@@ -62,63 +61,115 @@
   }
 }
 
+// ____________________button-prev_______________________
+
 .swiper-button-prev {
-  display: none;
   position: absolute;
-  width: 48px;
-  height: 40px;
+  display: none;
+
   z-index: 10;
   cursor: pointer;
+
+  margin-top: 0;
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  transition: box-shadow 250ms var(--timing-function);
 
   @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    top: 0;
-    right: 100px;
+    width: 34px;
+    height: 28px;
+
+    top: 235;
+    right: 334px;
+    left: auto;
   }
   @include desktop {
-    right: 512px;
-    top: 280px;
+    top: 121px;
+    right: 576px;
+
+    width: 48px;
+    height: 40px;
   }
 }
 
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.swiper-button-prev:hover .next-ikon,
+.swiper-button-prev:focus .next-ikon {
+  fill: var(--dark-green);
+  transition: fill 250ms var(--timing-function);
+}
+
+// ___________________________button-next______________________
+
 .swiper-button-next {
-  display: none;
   position: absolute;
-  width: 48px;
-  height: 40px;
+  display: none;
+
   z-index: 10;
   cursor: pointer;
+
+  margin-top: 0;
 
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
+  transition: box-shadow 250ms var(--timing-function);
 
   @include tablet {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    right: 0;
+
+    top: 235;
+    right: 32px;
+
+    width: 34px;
+    height: 28px;
   }
 
   @include desktop {
-    top: 280px;
+    top: 121px;
     right: 16px;
+
+    width: 48px;
+    height: 40px;
   }
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms var(--timing-function);
+}
+
+.swiper-button-next:hover .next-ikon,
+.swiper-button-next:focus .next-ikon {
+  fill: var(--dark-green);
+  transition: fill 250ms var(--timing-function);
 }
 
 .next-ikon {
-  width: 20.34px;
-  height: 11.49px;
+  @include tablet {
+    width: 20.34px;
+    height: auto;
+  }
+  @include desktop {
+    width: 29.05px;
+    height: auto;
+  }
 
-  fill: tomato;
+  transition: fill 250ms var(--timing-function);
 }
 
 .swiper-button-next:after {
@@ -133,8 +184,8 @@
 
   @include tablet {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 89px;
+    right: 40px;
     display: block;
     width: 320px;
     height: 320px;
@@ -145,8 +196,8 @@
   }
 
   @include desktop {
-    width: 528px;
-    height: 528px;
+    width: 580px;
+    height: 580px;
 
     top: -145px;
     right: 30px;
