@@ -66,7 +66,7 @@
   //   .form-modal:invalid & {
   //     border: 2px solid var(--eror-color);
   //   }
-  //   .form-modal:default & {
+  //   .form-modal:not(:focus-within) & {
   //     border: 2px solid var(--dark-green);
   //   }
   .form-modal:valid & {
@@ -85,7 +85,7 @@
   display: none;
   padding-left: 16px;
 
-  @include media-min($tablet) {
+  @include mobile {
     bottom: -16px;
     left: 12px;
     font-size: 13px;
@@ -94,7 +94,6 @@
   &::before {
     content: '';
     position: absolute;
-    // top: 4px;
     top: 0;
     left: 0;
     background-image: url('../images/error-icon.svg');
@@ -102,6 +101,10 @@
     background-position: center;
     width: 12px;
     height: 12px;
+
+    @include mobile {
+      top: 3px;
+    }
   }
 
   .form-modal__input:not(:focus):not(:placeholder-shown):invalid + & {
