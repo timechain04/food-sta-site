@@ -96,20 +96,23 @@
   line-height: 1.5;
   color: #ff705d;
   display: none;
+  padding-left: 16px;
 
   @include media-min($tablet) {
     bottom: 0px;
-    top: 48px;
-    left: 13px;
+    top: 43px;
+    left: 0;
     font-size: 12px;
   }
 
   &::before {
     content: '';
-    background-image: url('../images/error.svg');
-    margin-right: 4px;
-    background-size: cover;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background-image: url('../images/error-icon.svg');
     background-repeat: no-repeat;
+    background-position: center;
     width: 12px;
     height: 12px;
   }
