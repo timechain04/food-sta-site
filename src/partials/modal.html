@@ -16,8 +16,17 @@
               class="form-modal__input"
               name="name"
               id="name"
+              minlength="3"
               placeholder="Your name"
             />
+            <div class="error-box">
+              <svg class="error-box__icon">
+                <use href="./images/sprite.svg#icon-starfa"></use>
+              </svg>
+              <p class="error-box__text">
+                The name must be between 3 and 25 characters
+              </p>
+            </div>
           </div>
           <div class="form-modal__field">
             <label for="phone" class="form-modal__label">Phone number</label>
@@ -26,6 +35,7 @@
               class="form-modal__input"
               name="phone"
               id="phone"
+              minlength="11"
               placeholder="+38(0_ _) _ _ _   _ _   _ _"
             />
           </div>
@@ -40,7 +50,7 @@
             />
           </div>
         </div>
-        <button type="submit" class="button form-modal__btn">Send</button>
+        <button type="submit" class="button-white form-modal__btn">Send</button>
       </form>
     </section>
   </div>
