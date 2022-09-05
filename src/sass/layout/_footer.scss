@@ -47,12 +47,12 @@
 .footer__top-part {
   display: flex;
   margin-bottom: 40px;
-  @include media-max($tablet) {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  align-items: flex-start;
+  justify-content: space-between;
+
   @include tablet {
     align-items: center;
+    justify-content: flex-start;
   }
 
   @include desktop {
