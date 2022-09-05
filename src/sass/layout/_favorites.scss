@@ -27,11 +27,10 @@
   }
 
   &__link {
-    width: 100%;
-    // @include retina {
-    //   width: 336px;
-    //   height: 338px;
-    // }
+    @include retina {
+      width: 336px;
+      height: 338px;
+    }
   }
 }
 
