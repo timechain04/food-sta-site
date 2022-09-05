@@ -63,12 +63,12 @@
   margin-right: auto;
   border: 2px solid var(--dark-green);
 
-  //   .form-modal:invalid & {
-  //     border: 2px solid var(--eror-color);
-  //   }
-  //   .form-modal:default & {
-  //     border: 2px solid var(--dark-green);
-  //   }
+  .form-modal:not(:focus-within):invalid & {
+    border: 2px solid var(--eror-color);
+  }
+  .form-modal:not(:focus-within) & {
+    border: 2px solid var(--dark-green);
+  }
   .form-modal:valid & {
     background-color: var(--accent-green);
   }
