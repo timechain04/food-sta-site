@@ -92,13 +92,13 @@
   font-size: 10px;
   line-height: 1.2;
   @include tablet {
-    margin-top: 12px;
-    margin-bottom: 100px;
+    margin-top: 22px;
+    margin-bottom: 90px;
     font-size: 12px;
     line-height: 1.17;
   }
   @include desktop {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
   }
 }
 
