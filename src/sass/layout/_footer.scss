@@ -1,0 +1,146 @@
+.footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/footer/fruit-1x.jpg),
+    url(../images/footer/orange-1x.jpg), url(../images/footer/apple-1x.jpg);
+  background-size: 253px 66px, 104px 259px, 110px 116px;
+  background-position: bottom 0 left calc(50% + 19px), top 0 right 0,
+    top 132 left 0;
+  background-repeat: no-repeat;
+  @include retina {
+    background-image: url(../images/footer/fruit-2x.jpg),
+      url(../images/footer/orange-2x.jpg), url(../images/footer/apple-2x.jpg);
+  }
+  @include tablet {
+    background-image: url(../images/footer/footer-tablet-1x.jpg);
+    background-size: cover;
+    background-position: bottom 0 right 0;
+    background-repeat: no-repeat;
+    @include retina {
+      background-image: url(../images/footer/footer-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: url(../images/footer/footer-desktop-1x.jpg);
+    background-size: 1211px 266px;
+    background-position: bottom 0 right calc(50% - 16px);
+    background-repeat: no-repeat;
+    @include retina {
+      background-image: url(../images/footer/footer-desktop-2x.jpg);
+    }
+  }
+}
+.footer__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+.footer__wrapper {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__top-part {
+  display: flex;
+  margin-bottom: 40px;
+  @include media-max($tablet) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  @include tablet {
+    align-items: center;
+  }
+
+  @include desktop {
+    height: 52px;
+    margin-bottom: 129px;
+  }
+}
+.footer__navigation {
+  margin-top: 4px;
+  margin-right: calc(50% - 49px);
+  @include tablet {
+    width: 319px;
+    margin-right: 0;
+    margin-left: 114px;
+    margin-top: 0;
+  }
+  @include desktop {
+    margin-left: 148px;
+  }
+}
+.footer__slogan {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.footer__input.form__input {
+  @include tablet {
+    margin-right: 13px;
+    width: 279px;
+  }
+}
+
+.footer__agreement {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-size: 10px;
+  line-height: 1.2;
+  @include tablet {
+    margin-top: 12px;
+    margin-bottom: 100px;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  @include desktop {
+    margin-bottom: 80px;
+  }
+}
+
+.footer__bottom-part {
+  font-size: 10px;
+  line-height: 1.2;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.footer__information-list {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  text-decoration: underline;
+  color: var(--dark-green);
+  @include tablet {
+    margin-bottom: 0;
+    width: 294px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+.footer__agreement-link {
+  text-decoration: underline;
+  color: var(--dark-green);
+}
+.footer__ownership {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 145px;
+  width: 100%;
+  @include tablet {
+    max-width: 174px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
