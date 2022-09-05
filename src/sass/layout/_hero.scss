@@ -24,11 +24,12 @@
   @include tablet {
     margin-bottom: 44px;
     font-size: 42px;
-    line-height: 120%;
+    line-height: calc(50 / 42);
     max-width: 537px;
   }
   @include desktop {
     font-size: 48px;
+    line-height: calc(58 / 48);
     margin-bottom: 28px;
     max-width: 502.42px;
   }
@@ -41,13 +42,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: calc(21 / 14);
 
   color: rgba(44, 44, 44, 1);
 
   @include tablet {
     margin-bottom: 40px;
     font-size: 16px;
+    line-height: calc(24 / 16);
   }
 
   @include desktop {
