@@ -17,16 +17,12 @@
               name="name"
               id="name"
               minlength="3"
+              required
               placeholder="Your name"
             />
-            <div class="error-box">
-              <svg class="error-box__icon">
-                <use href="./images/sprite.svg#icon-starfa"></use>
-              </svg>
-              <p class="error-box__text">
-                The name must be between 3 and 25 characters
-              </p>
-            </div>
+            <p class="form-modal__error">
+              The name must be between 3 and 25 characters
+            </p>
           </div>
           <div class="form-modal__field">
             <label for="phone" class="form-modal__label">Phone number</label>
@@ -35,9 +31,14 @@
               class="form-modal__input"
               name="phone"
               id="phone"
+              required
               minlength="11"
               placeholder="+38(0_ _) _ _ _   _ _   _ _"
             />
+
+            <p class="form-modal__error">
+              This phone must be in the format 099 000 00 00
+            </p>
           </div>
           <div class="form-modal__field">
             <label for="emeil" class="form-modal__label">E-mail</label>
@@ -45,9 +46,11 @@
               type="email"
               class="form-modal__input"
               name="emeil"
+              required
               id="emeil"
               placeholder="example@gmail.com"
             />
+            <p class="form-modal__error">Please enter a valid email address</p>
           </div>
         </div>
         <button type="submit" class="button-white form-modal__btn">Send</button>
