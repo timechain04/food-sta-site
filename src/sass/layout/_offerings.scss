@@ -8,41 +8,29 @@
   @include media-min(768px) {
     flex-direction: row;
     align-items: flex-end;
-    // justify-content: start;
     justify-content: space-between;
+  } 
+  @include media-min(1280px) {
+    width: 550px;
   } 
 }
 
 .offerings {
-  // width: 100%;
-  // padding-top: 70px;
-  // padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start; 
-  @include media-min(1280) {
+  @include media-min(1280px) {
     flex-direction: row;
+    align-items: flex-end;
+    gap: 90px;
+    justify-content: start;
   } 
-  // @include mobile {
-  //   align-items: flex-start; 
-  // }
-  // @include tablet {
-
-  // }
-  // @include media-max(479px) {
-
-  // } 
-  
-
-  // justify-content: center;
- 
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
   &__image {
     margin-left: auto;
     margin-right: auto;
+    width: 280px;
+    height: 280px;
     @include media-min(768px) {
       margin-left: 0;
       margin-right: 0;
@@ -50,19 +38,18 @@
       width: 357px;
       height: 357px;
     } 
-    width: 280px;
-    height: 280px;
-    // @include media-min(768px) {
-    //   width: 357px;
-    //   height: 357px;
-    // } 
+    @include media-min(1280px) {
+      margin-left: 0;
+      margin-right: 0;
+      min-width: 550px;
+      height: 550px;
+    } 
     border-radius: 50%;
     background-color: #FFE550;
     border: 3px solid rgba(255, 255, 255, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    // position: relative;
     &--inside {
       width: 255px;
       height: 255px;
@@ -72,6 +59,10 @@
       @include media-min(768px) {
         width: 325px;
         height: 325px;
+      }
+      @include media-min(1280px) {
+        width: 502px;
+        height: 502px;
       } 
     }
     &--item {
@@ -80,17 +71,32 @@
       left: 30;
       z-index: 1;
       @include media-min(768px) {
-        top: -51;
+        top: -53;
+        left: 38;
+      } 
+      @include media-min(1280px) {
+        top: -78px;
+        left: 60px;
       } 
     }
 
     &--shadow {
       position: absolute;
-      bottom: 29;
-      left: 61;
+      bottom: 25px;
+      left: 66px;
+      width: 128px;
+      height: 44px;
       @include media-min(768px) {
-        bottom: 22;
-        left: 69;
+        bottom: 29px;
+        left: 79px;
+        width: 164px;
+        height: 58px;
+      } 
+      @include media-min(1280px) {
+        bottom: 41px;
+        left: 123px;
+        width: 252px;
+        height: 87px;
       } 
     }
   }
@@ -100,6 +106,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; 
+    @include media-min(1280px) {
+      padding-bottom: 57px;
+    } 
   }
 
   &__title {
@@ -108,6 +117,7 @@
     max-width: 280px;
     @include media-min(768px) {
       max-width: 526px;
+      margin-bottom: 20px;
     } 
   }
   &__description {
@@ -118,16 +128,27 @@
     max-width: 272px;
     @include media-min(768px) {
       max-width: 500px;
+      margin-bottom: 40px;
+    } 
+    @include media-min(1280px) {
+      margin-bottom: 40px;
     } 
   }
   &__list {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
     display: flex;
     flex-direction: column;
     gap: 28px;
     @include media-min(768px) {
       flex-direction: row;
       gap: 116px;
+      margin-bottom: 40px;
+    } 
+    @include media-min(1280px) {
+      gap: 67px;
+    } 
+    @include media-min(1280px) {
+      margin-bottom: 32px;
     } 
   }
   &__item {
@@ -145,7 +166,6 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
-    // color: #2C2C2C;
   }
   &__action-part {
     display: flex;
@@ -159,12 +179,20 @@
     border: 2px solid var(--dark-green);
     background-color: #ffffff;
   }
+  &__button:hover,
+  &__button:focus {
+    border-color: #597D00;
+    background-color: #FFFFFF;
+  }
   &__link {
     font-size: 14px;
     line-height: 1.5;
     display: flex;
     flex-direction: row;
     align-items: center;
+    @include media-min(768px) {
+      display: none;
+    } 
   }
   &__icon-arrow {
     width: 13.67px;
@@ -182,9 +210,21 @@
     gap: 44px;
     margin-left: 29px;
   } 
-  @include media-min(768px) {
+  @include media-min(1280px) {
     display: none;
     width: 550px;
+  } 
+}
+
+.offerings-section {
+  padding-bottom: 60px;
+  @include media-min(768px) {
+    padding-top: 187px;
+    padding-bottom: 100px;
+  } 
+  @include media-min(1280px) {
+    padding-top: 231px;
+    padding-bottom: 43px;
   } 
 }
 
@@ -192,6 +232,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14;
+  @include media-min(1280px) {
+    line-height: 1.5;
+  } 
 }
 
 
@@ -204,7 +247,9 @@
   @include media-min(768px) {
     background-image: url('../images/offerings/offerings-bcg-fablet.png');
   } 
-  background-image: cover;
+  @include media-min(1280px) {
+    background-image: url('../images/offerings/offerings-bcg-desktop.png');
+  } 
   background-repeat: no-repeat;
   position: relative;
 }
