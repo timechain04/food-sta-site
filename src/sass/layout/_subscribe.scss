@@ -36,14 +36,20 @@
 }
 
 .subscribe__title {
+  line-height: 1.2;
   margin-bottom: 20px;
   text-transform: capitalize;
+
+  @include tablet {
+    line-height: 1.19;
+  }
 }
 
 .subscribe__text {
   margin-bottom: 40px;
   @include media-min($tablet) {
     margin-bottom: 24px;
+    line-height: 1.5;
   }
 }
 
@@ -51,7 +57,7 @@
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 11px;
+  padding-left: 12px;
   margin-bottom: 20px;
   background: var(--secondary-bg-color);
   border: 0.854167px solid var(--yellow);
