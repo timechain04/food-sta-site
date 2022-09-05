@@ -85,16 +85,19 @@
     display: flex;
     gap: 32px;
 
-  @include retina {
+  @include desktop {
     gap: 20px;
+
   }
 
   @include desktop {
+    
 
   }
 }
 .favorites__card-item--tablet {
   @include retina {
     display: none;
+ 
   }
 }
