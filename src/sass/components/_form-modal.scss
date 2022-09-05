@@ -52,7 +52,7 @@
     border: 1px solid var(--dark-green);
   }
 
-  &:invalid {
+  &:not(:focus):not(:placeholder-shown):invalid {
     border: 1px solid var(--eror-color);
   }
 }
@@ -72,11 +72,11 @@
 
 .form-modal__error {
   position: absolute;
-  bottom: 44px;
-  left: 15px;
+  bottom: -14px;
+  left: 12px;
   font-weight: 400;
   font-size: 10px;
-  line-height: 1.5;
+  line-height: 1.4;
   color: var(--eror-color);
   display: none;
   padding-left: 16px;
@@ -85,13 +85,13 @@
     bottom: -16px;
     left: 12px;
     font-size: 13px;
-    line-height: 1.4;
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
+    // top: 4px;
+    top: 0;
     left: 0;
     background-image: url('../images/error-icon.svg');
     background-repeat: no-repeat;
