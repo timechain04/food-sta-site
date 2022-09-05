@@ -27,10 +27,11 @@
   }
 
   &__link {
-    @include retina {
-      width: 336px;
-      height: 338px;
-    }
+    width: 100%;
+    // @include retina {
+    //   width: 336px;
+    //   height: 338px;
+    // }
   }
 }
 
@@ -60,7 +61,7 @@
   @include desktop {
     // width: 394px;
     // height: 397px;
-    width: 100%;
+      width: 100%;
     padding: calc(41px - 16px);
     border: 16px solid #ffe550;
     border-radius: 197.5px;
@@ -72,6 +73,7 @@
 .favorites__link:active .favorites__img {
   border: 11px solid #b5ff00;
   scale: 1.1;
+  
 
   @include tablet {
     border: 14px solid #b5ff00;
@@ -86,6 +88,7 @@
   flex-wrap: wrap;
   display: flex;
   gap: 20px;
+  
 
   @include tablet {
     gap: 32px;
@@ -95,11 +98,14 @@
 .favorites__card-item {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+
+
 
   @include media-max(479px) {
     &:nth-last-child(-n + 3) {
-      display: none;
+      display: flex;
+      
     }
 
   }
