@@ -38,6 +38,7 @@
 .favorites__img {
   // min-width: 280px;
   // min-height: 282px;
+
   padding: calc(29px - 11px);
   background-color: #ffffff;
   border: 11px solid #ffe550;
@@ -58,8 +59,9 @@
   }
 
   @include desktop {
-    width: 394px;
-    height: 397px;
+    // width: 394px;
+    // height: 397px;
+    width: 100%;
     padding: calc(41px - 16px);
     border: 16px solid #ffe550;
     border-radius: 197.5px;
@@ -108,7 +110,7 @@
   }
 
   @include media-min($desktop) {
-    width: calc((100% - 60px) / 3);
+    width: calc((100% - 64px) / 3);
   }
 }
 
