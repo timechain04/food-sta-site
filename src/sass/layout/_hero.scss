@@ -183,6 +183,8 @@
 
 .swiper {
   display: none;
+  cursor: pointer;
+  transition: border-color 250ms var(--timing-function);
 
   @include tablet {
     position: absolute;
@@ -206,4 +208,9 @@
 
     border: 26px solid var(--yellow);
   }
+}
+
+.swiper:hover {
+  border-color: var(--green);
+  transition: border-color 250ms var(--timing-function);
 }
