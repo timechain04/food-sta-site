@@ -94,11 +94,14 @@
 .favorites__card-item {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+
 
   @include media-max(767px) {
     &:nth-last-child(-n + 3) {
       display: none;
+      justify-content: center;
+
     }
   }
 
