@@ -1036,11 +1036,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-@media screen and (min-width: 1280px) {
-  .offerings__link {
-    display: none;
-  }
-}
 .offerings__icon-arrow {
   width: 13.67px;
   height: 13.67px;
