@@ -118,14 +118,19 @@
       max-width: 526px;
       margin-bottom: 20px;
     }
+    @include media-min(768px) {
+      padding-top: 60px;
+    }
   }
   &__description {
     margin-bottom: 28px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16.41px;
+    line-height: 1.14;
     max-width: 272px;
     @include media-min(768px) {
+      font-size: 16px;
+      line-height: 1.19;
       max-width: 500px;
       margin-bottom: 40px;
     }
@@ -155,9 +160,30 @@
     flex-direction: column;
     max-width: 252px;
   }
-  &__icon {
-    width: 32px;
-    height: 32px;
+
+  &__item--rocket::before {
+    content: '';
+    background-image: url('../images/offerings/rocket_launch_fillo.svg');
+    background-size: 32px 32px;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
+  }
+  &__item-touch::before {
+    content: '';
+    background-image: url('../images/offerings/touch_app_fillo.svg');
+    background-size: 32px 32px;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    margin-bottom: 8px;
   }
 
   &__title--small {
@@ -217,12 +243,13 @@
 
 .offerings-section {
   padding-bottom: 60px;
+  padding-top: 70px;
   @include media-min(768px) {
-    padding-top: 187px;
+    padding-top: 76px;
     padding-bottom: 100px;
   }
   @include media-min(1280px) {
-    padding-top: 231px;
+    padding-top: 230px;
     padding-bottom: 43px;
   }
 }
@@ -236,21 +263,21 @@
   }
 }
 
-.background {
-  background-image: url('../images/offerings/offerings-bcg-320-mobile.png');
-  background-size: cover;
-  @include media-min(480px) {
-    background-image: url('../images/offerings/offerings-bcg-480-mobile.png');
-  }
-  @include media-min(768px) {
-    background-image: url('../images/offerings/offerings-bcg-fablet.png');
-  }
-  @include media-min(1280px) {
-    background-image: url('../images/offerings/offerings-bcg-desktop.png');
-  }
-  background-repeat: no-repeat;
-  position: relative;
-}
+// .background {
+//   background-image: url('../images/offerings/offerings-bcg-320-mobile.png');
+//   background-size: cover;
+//   @include media-min(480px) {
+//     background-image: url('../images/offerings/offerings-bcg-480-mobile.png');
+//   }
+//   @include media-min(768px) {
+//     background-image: url('../images/offerings/offerings-bcg-fablet.png');
+//   }
+//   @include media-min(1280px) {
+//     background-image: url('../images/offerings/offerings-bcg-desktop.png');
+//   }
+//   background-repeat: no-repeat;
+//   position: relative;
+// }
 
 .wrapper--circle {
   background-color: var(--secondary-bg-color);
@@ -261,4 +288,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.yellow-background {
+  background-image: url('../images/offerings/offerings-bcg-320-mobile.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 1050px;
+  @include retina {
+    background-image: url('../images/offerings/offerings-bcg-320-mobile2x.png');
+  }
+  @include media-min(480px) {
+    background-image: url('../images/offerings/offerings-bcg-480-mobile.png');
+    @include retina {
+      background-image: url('../images/offerings/offerings-bcg-480-mobile2x.png');
+    }
+  }
+  @include media-min(768px) {
+    background-image: url('../images/offerings/offerings-bcg-fablet.png');
+    background-size: 100% 1140px;
+    @include retina {
+      background-image: url('../images/offerings/offerings-bcg-fablet2x.png');
+    }
+  }
+  @include media-min(1280px) {
+    background-image: url('../images/offerings/offerings-bcg-desktop.png');
+    background-size: 100% 824px;
+    @include retina {
+      background-image: url('../images/offerings/offerings-bcg-desktop2x.png');
+    }
+  }
 }
