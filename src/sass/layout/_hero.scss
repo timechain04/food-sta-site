@@ -210,7 +210,8 @@
   }
 }
 
-.swiper:hover {
+.swiper:hover,
+.swiper:focus {
   border-color: var(--green);
   transition: border-color 250ms var(--timing-function);
 }
