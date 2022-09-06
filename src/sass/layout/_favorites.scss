@@ -93,8 +93,9 @@
 
 .favorites__card-item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  
+
 
 
   @include media-max(767px) {
