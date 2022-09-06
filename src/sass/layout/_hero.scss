@@ -3,7 +3,7 @@
   padding-bottom: 50px;
 
   @include tablet {
-    padding-bottom: 0px;
+    padding-bottom: 76px;
   }
   @include desktop {
     position: relative;
@@ -86,12 +86,12 @@
     height: 28px;
 
     top: 235;
-    right: 334px;
+    right: 302px;
     left: auto;
   }
   @include desktop {
     top: 121px;
-    right: 576px;
+    right: 560px;
 
     width: 48px;
     height: 40px;
@@ -132,7 +132,7 @@
     justify-content: center;
 
     top: 235;
-    right: 32px;
+    right: 0;
 
     width: 34px;
     height: 28px;
@@ -140,7 +140,7 @@
 
   @include desktop {
     top: 121px;
-    right: 16px;
+    right: 0;
 
     width: 48px;
     height: 40px;
@@ -185,7 +185,7 @@
   @include tablet {
     position: absolute;
     top: 89px;
-    right: 40px;
+    right: 8px;
     display: block;
     width: 320px;
     height: 320px;
@@ -200,7 +200,7 @@
     height: 580px;
 
     top: -145px;
-    right: 30px;
+    right: 14px;
 
     border: 26px solid var(--yellow);
   }
