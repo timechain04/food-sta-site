@@ -24,11 +24,12 @@
   @include tablet {
     margin-bottom: 44px;
     font-size: 42px;
-    line-height: 120%;
+    line-height: calc(50 / 42);
     max-width: 537px;
   }
   @include desktop {
     font-size: 48px;
+    line-height: calc(58 / 48);
     margin-bottom: 28px;
     max-width: 502.42px;
   }
@@ -41,13 +42,14 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
+  line-height: calc(21 / 14);
 
   color: rgba(44, 44, 44, 1);
 
   @include tablet {
     margin-bottom: 40px;
     font-size: 16px;
+    line-height: calc(24 / 16);
   }
 
   @include desktop {
@@ -67,7 +69,7 @@
   position: absolute;
   display: none;
 
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 
   margin-top: 0;
@@ -116,7 +118,7 @@
   position: absolute;
   display: none;
 
-  z-index: 10;
+  z-index: 1;
   cursor: pointer;
 
   margin-top: 0;
@@ -181,6 +183,8 @@
 
 .swiper {
   display: none;
+  cursor: pointer;
+  transition: border-color 250ms var(--timing-function);
 
   @include tablet {
     position: absolute;
@@ -206,26 +210,8 @@
   }
 }
 
-// .hero__button {
-//   padding: 6px 18px;
-
-//   cursor: pointer;
-//   width: 98px;
-//   height: 32px;
-//   background: --green;
-//   border-radius: 30px;
-//   border: none;
-
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 13px;
-//   line-height: 150%;
-
-//   color: --praimery-text-color;
-
-//   &__button:hover,
-//   &__button:focus {
-//     background: --accent-green;
-//   }
-// }
+.swiper:hover,
+.swiper:focus {
+  border-color: var(--green);
+  transition: border-color 250ms var(--timing-function);
+}
