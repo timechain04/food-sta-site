@@ -1036,11 +1036,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-@media screen and (min-width: 1280px) {
-  .offerings__link {
-    display: none;
-  }
-}
 .offerings__icon-arrow {
   width: 13.67px;
   height: 13.67px;
@@ -1154,10 +1149,11 @@ body {
 }
 .favorites__text, .favorites__title {
   text-align: center;
+  max-width: 280px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1280px) {
   .favorites__text, .favorites__title {
-    max-width: 280px;
+    max-width: 656px;
   }
 }
 .favorites__about {
